@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "sandbox": "turbo run sandbox",
     "lint": "turbo run lint",
     "format": "prettier --write .",
     "check-types": "turbo run check-types"
@@ -16,5 +17,10 @@
   "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
