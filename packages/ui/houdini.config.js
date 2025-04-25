@@ -7,7 +7,9 @@ const config = {
 	},
 	runtimeDir: '.houdini',
 	plugins: {
-		'houdini-svelte': {}
+		'houdini-svelte': {
+			staticRuntime: './.houdini/runtime'
+		}
 	}
 };
 
