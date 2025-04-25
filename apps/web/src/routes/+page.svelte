@@ -1,7 +1,13 @@
 <script lang="ts">
-	import { MyCounterButton } from '@repo/ui';
+	import type { PageProps } from './$houdini';
+
+	let { data }: PageProps = $props();
+	let { AllCharacters } = $derived(data);
 </script>
 
-<h1>Web</h1>
-<MyCounterButton />
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>List of all the characters:</h1>
+{#if $AllCharacters.data}
+	{#each $AllCharacters.data.characters.results as character}
+		<p>{character.name}</p>
+	{/each}
+{/if}
