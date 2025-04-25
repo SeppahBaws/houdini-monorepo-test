@@ -140,6 +140,12 @@ importers:
       globals:
         specifier: ^16.0.0
         version: 16.0.0
+      houdini:
+        specifier: ^1.5.5
+        version: 1.5.5(vite@6.3.2(@types/node@22.15.2))
+      houdini-svelte:
+        specifier: ^2.1.14
+        version: 2.1.15(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0

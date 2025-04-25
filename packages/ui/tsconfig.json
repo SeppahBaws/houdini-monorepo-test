@@ -1,15 +1,9 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
+		"lib": ["ES2023", "dom", "webworker"],
 		"strict": true,
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext"
+		"skipLibCheck": true,
+		"rootDirs": [".", "./.svelte-kit/types", "./.houdini/types"]
 	}
 }
