@@ -44,10 +44,10 @@ importers:
         version: 9.25.0
       houdini:
         specifier: ^1.5.5
-        version: 1.5.5(vite@6.3.2(@types/node@22.15.2))
+        version: link:../../../../houdini/houdini/packages/houdini
       houdini-svelte:
         specifier: ^2.1.14
-        version: 2.1.15(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
+        version: link:../../../../houdini/houdini/packages/houdini-svelte
       prettier:
         specifier: ^3.5.1
         version: 3.5.2
