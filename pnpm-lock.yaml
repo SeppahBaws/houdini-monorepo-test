@@ -43,11 +43,11 @@ importers:
         specifier: ^9.25.0
         version: 9.25.0
       houdini:
-        specifier: ^1.5.5
-        version: link:../../../../houdini/houdini/packages/houdini
+        specifier: ^1.5.6
+        version: 1.5.6(vite@6.3.2(@types/node@22.15.2))
       houdini-svelte:
-        specifier: ^2.1.14
-        version: link:../../../../houdini/houdini/packages/houdini-svelte
+        specifier: ^2.1.16
+        version: 2.1.16(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
       prettier:
         specifier: ^3.5.1
         version: 3.5.2
@@ -141,11 +141,11 @@ importers:
         specifier: ^16.0.0
         version: 16.0.0
       houdini:
-        specifier: ^1.5.5
-        version: 1.5.5(vite@6.3.2(@types/node@22.15.2))
+        specifier: ^1.5.6
+        version: 1.5.6(vite@6.3.2(@types/node@22.15.2))
       houdini-svelte:
-        specifier: ^2.1.14
-        version: 2.1.15(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
+        specifier: ^2.1.16
+        version: 2.1.16(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -1370,15 +1370,15 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  houdini-svelte@2.1.15:
-    resolution: {integrity: sha512-QHyq3OriXCxGFnkmqj7EHHH2jwQIlhXCiOZ7cdo3ebr0JmdjAc2d87MmYweImlwl6helAT1fAix6KwahWx1oZg==}
+  houdini-svelte@2.1.16:
+    resolution: {integrity: sha512-DMGcdpcldolR9fW4vkeBaqQfB4l6d98mUQY8/0jxA3B/cChpike+0JLsg0aIfbw65+OQOKNxXErFuqIITRDyGg==}
     peerDependencies:
       '@sveltejs/kit': ^2.9.0
       svelte: ^5.0.0
       vite: ^5.3.3 || ^6.0.3
 
-  houdini@1.5.5:
-    resolution: {integrity: sha512-NEsrG9FkEEj472bN6AEdi9RsqAeLU1Ohnz+CJLiVYNjpcV8WSyVoPuTiSC9CLi/pH1wLH/EPNKrQBMPkHhP1fQ==}
+  houdini@1.5.6:
+    resolution: {integrity: sha512-Q/1x9VEGFHSrCajyxuX1y/r5eXddIBGTFYkKugAULOdbxfW0SR5Wjbxkjmp4jZF5DA6qQALOPywAXmtKaxdJyQ==}
     hasBin: true
     peerDependencies:
       vite: ^5.3.3 || ^6.0.3
@@ -3403,20 +3403,20 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  houdini-svelte@2.1.15(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)):
+  houdini-svelte@2.1.16(@sveltejs/kit@2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)):
     dependencies:
       '@kitql/helpers': 0.8.12
       '@sveltejs/kit': 2.20.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2)))(svelte@5.28.1)(vite@6.3.2(@types/node@22.15.2))
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.10.1
-      houdini: 1.5.5(vite@6.3.2(@types/node@22.15.2))
+      houdini: 1.5.6(vite@6.3.2(@types/node@22.15.2))
       recast: 0.23.11
       rollup: 4.40.0
       svelte: 5.28.1
       vite: 6.3.2(@types/node@22.15.2)
 
-  houdini@1.5.5(vite@6.3.2(@types/node@22.15.2)):
+  houdini@1.5.6(vite@6.3.2(@types/node@22.15.2)):
     dependencies:
       '@babel/parser': 7.27.0
       '@clack/prompts': 0.6.3

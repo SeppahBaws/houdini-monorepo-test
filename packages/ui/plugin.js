@@ -1,8 +1,7 @@
-import { plugin } from 'houdini'
+import { plugin } from 'houdini';
 
-export default plugin('@repo/ui', async () =>  {
-    return {
-      staticRuntime: './dist'
-    }
-})
-
+export default plugin('@repo/ui', async () => {
+	return {
+		staticRuntime: './dist'
+	};
+});
