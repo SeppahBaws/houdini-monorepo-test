@@ -26,14 +26,14 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"prettier": "^3.5.1",
 		"eslint": "^9.25.0",
+		"houdini": "^1.5.8",
+		"houdini-svelte": "^2.1.18",
 		"prettier-plugin-svelte": "^3.3.3",
 		"svelte": "^5.28.1",
 		"svelte-check": "^4.1.4",
 		"tslib": "^2.8.1",
 		"typescript": "5.8.2",
 		"vite": "^6.3.2",
-		"vitest": "^3.1.1",
-		"houdini": "^1.5.6",
-		"houdini-svelte": "^2.1.16"
+		"vitest": "^3.1.1"
 	}
 }
