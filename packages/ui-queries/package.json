@@ -1,0 +1,33 @@
+{
+    "name": "@repo/ui-queries",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "houdini pull-schema && node clean.js && houdini generate && vite build",
+        "prepack": "npm run build && publint",
+        "houdini:pull": "houdini pull-schema"
+    },
+    "module": "houdini.libmode.js",
+    "types": "houdini.libmode.d.ts",
+    "type": "module",
+    "files": [
+        "dist",
+        "!dist/**/*.test.*",
+        "!dist/**/*.spec.*"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "devDependencies": {
+        "houdini": "^1.5.8",
+        "houdini-svelte": "^2.1.18",
+        "svelte": "^5.35.6",
+        "typescript": "^5.0.0",
+        "vite": "^6.3.5",
+        "vite-plugin-dts": "^4.5.4"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+      "allowJs": true,
+      "checkJs": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": false,
+      "sourceMap": true,
+      "strict": true,
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "rootDirs": [
+          ".",
+      ]
+  }
+}

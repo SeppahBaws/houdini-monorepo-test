@@ -1,29 +1,23 @@
 <script lang="ts">
-	import { graphql } from '$houdini';
-	import type { CharacterCardVariables } from './$houdini';
+	import { CharacterCardStore } from '@repo/ui-queries';
+	import { onMount } from 'svelte';
+
+	// import type { CharacterCardVariables } from './$houdini';
 
 	interface Props {
 		id: string;
 	}
 	let { id }: Props = $props();
 
-	let characterInfo = $derived(
-		graphql(`
-			query CharacterCard($characterId: ID!) @load {
-				character(id: $characterId) {
-					name
-					status
-					image
-				}
-			}
-		`)
-	);
+	let characterInfo = new CharacterCardStore();
 
-	export const _CharacterCardVariables: CharacterCardVariables = ({ props }: { props: Props }) => {
-		return {
-			characterId: props.id
-		};
-	};
+	$effect(() => {
+		characterInfo.fetch({
+			variables: {
+				characterId: id
+			}
+		});
+	});
 </script>
 
 {#if $characterInfo.data}

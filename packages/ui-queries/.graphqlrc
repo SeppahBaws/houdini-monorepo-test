@@ -1,0 +1,7 @@
+schema:
+  - ./schema.graphql
+documents:
+  - ./src/queries/**/*.gql
+  - ./src/fragments/**/*.gql
+  - ./src/mutations/**/*.gql
+  - ./src/subscriptions/**/*.gql

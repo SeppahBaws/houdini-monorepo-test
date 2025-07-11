@@ -7,8 +7,7 @@ const config = {
 	},
 	runtimeDir: '.houdini',
 	plugins: {
-		'houdini-svelte': {},
-		'@repo/ui': {}
+		'houdini-svelte': {}
 	}
 };
 
