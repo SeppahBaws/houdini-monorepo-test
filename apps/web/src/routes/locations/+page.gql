@@ -1,0 +1,10 @@
+query LocationsList {
+	locations {
+		results {
+			...LocationFrag @mask_disable
+			# name
+			# type
+			# dimension
+		}
+	}
+}

@@ -23,6 +23,9 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@repo/ui-queries':
+        specifier: workspace:*
+        version: link:../../packages/ui-queries
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
