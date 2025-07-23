@@ -1,0 +1,7 @@
+query CharacterCardQuery($characterId: ID!) {
+	character(id: $characterId) {
+		name
+		status
+		image
+	}
+}
